@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídeas em HTML5</title>
+</head>
+<body>
+    <H1>Imagem dinâmica</H1>
+    <p>exercício de teste de imagens dinâminca</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>Teste para inserir audios</p>
+    <audio preload="auto" autoplay controls loop>
+        <source src="midea/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midea/guanacast-33.ogg" type="audio/ogg">
+        <source src="midea/guanacast-33.wav" type="audio/wav">
+    </audio>
+    
+</body>
+</html>
