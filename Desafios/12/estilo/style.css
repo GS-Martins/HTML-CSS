@@ -3,18 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-@font-face {
-    font-family: 'Passion One';
-    src: url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap') format('opentype');
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Sriracha';
-    src: url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-    font-weight: normal;
-}
-
 :root{
     --fonte-título: 'Passion One',bold;
     --font-padrão: Arial, Verdana, Helvetica, sans-serif;
@@ -22,7 +10,8 @@
 }
 
 *{ 
-   margin: 0px; 
+   margin: 0px;
+   padding: 0px;
 } 
 
 header{
@@ -37,7 +26,7 @@ header>h1{
     color: white;
     font-family: var(--fonte-título);
     font-weight: bold;
-    
+    font-variant: small-caps;/*Peguei do Guanabara esse estilo*/
 }
 
 header>p{
@@ -46,26 +35,23 @@ header>p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header a{
+header a, footer a{
     text-decoration: none;
     color: white;
-    
+    font-weight: bolder;
 }
 
-header a:hover{
+header a:hover, footer a:hover{
     text-decoration: underline;
-    color: white;
-}
-
-body{
-    padding: 0px;
 }
 
 section{
     font-family:var(--fonte-texto);
     font-size: 3.5vw;
-    line-height: auto;
-    padding: 60px 0px 90px 30px;
+    /*line-height: auto;*/
+    line-height: 2em;
+    /*padding: 60px 0px 90px 30px;*/
+    padding:10vh 0px 10vh 30px;
     text-align: left;
     
 }
@@ -73,15 +59,19 @@ section{
 section.p2{
     background: black url(imagens/background001.jpg) right center no-repeat fixed;
     background-size: cover;
-    box-shadow: inset rgba(0, 0, 0, 0.489) 3px 4px 15px 0px;padding: 60px 0px 90px 30px;
-    padding: 60px 30px;
+    box-shadow: inset rgba(0, 0, 0, 0.489) 3px 4px 15px 0px;
+    /*padding: 60px 0px 90px 30px;
+    padding: 60px 30px;*/
+    
 }
 
 article.a1{
     background-image: linear-gradient(to right,black, rgba(0, 0, 0, 0.153));  
-    width: max-content;
+    /*width: max-content;*/
     color: white;
     padding: 10px;
+    display:inline-block;
+    
 }
 
 section.p3{
@@ -92,13 +82,14 @@ section.p3{
 
 article.a2{
     background-color: rgba(0, 0, 0, 0.508);  
-    width: max-content;
+    /*width: max-content;*/
+    display:inline-block;
     color: white;
     padding: 10px;
     
 }
 
-aside{
+footer{
     background-color: black;
     color: white;
     text-align: center;
@@ -106,13 +97,13 @@ aside{
     font-family: var(--font-padrão);
 }
 
-aside a{
+footer a{
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-aside a:hover{
+footer a:hover{
     text-decoration: underline;
     color: white;
 }
