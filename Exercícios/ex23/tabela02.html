@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Grande</title>
+
+    <style>
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead{
+            background-color: gray;
+            color:white;
+        }
+
+        .Posição{
+            width: 60px;
+            text-align: center;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Grande Tabela</h1>
+
+    <table>
+
+        <thead>
+            <th class="Posição">Posição</th>
+            <th>Localidade</th>
+            <th>População</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="Posição">1</td>
+                <td>Rio Branco</td>
+                <td class="num">419.452</td>
+            </tr>
+            <tr>
+                <td class="Posição">2</td>
+                <td>Cruzeiro do Sul</td>
+                <td class="num">89.760</td>
+            </tr>
+            <tr>
+                <td class="Posição">3</td>
+                <td>Sena Madureira</td>
+                <td class="num">47.168</td>
+            </tr>
+            <tr>
+                <td class="Posição">4</td>
+                <td>Tarauacá</td>
+                <td class="num">43.730</td>
+            </tr>
+            <tr>
+                <td class="Posição">5</td>
+                <td>Feijó</td>
+                <td class="num">34.986</td>
+            </tr>
+            <tr>
+                <td class="Posição">6</td>
+                <td>Brasiléia</td>
+                <td class="num">27.123</td>
+            </tr>
+            <tr>
+                <td class="Posição">7</td>
+                <td>Senador Guiomard</td>
+                <td class="num">23.446</td>
+            </tr>
+            <tr>
+                <td class="Posição">8</td>
+                <td>Plácido de Castro</td>
+                <td class="num">20.147</td>
+            </tr>
+            <tr>
+                <td class="Posição">9</td>
+                <td>Xapuri</td>
+                <td class="num">19.866</td>
+            </tr>
+            <tr>
+                <td class="Posição">10</td>
+                <td>Mâncio Lima</td>
+                <td class="num">19.643</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th class="Posição">Total</th>
+            <td>----</td>
+            <td class="num">745.921</td>
+        </tfoot>
+    </table>
+
+    
+</body>
+</html>
