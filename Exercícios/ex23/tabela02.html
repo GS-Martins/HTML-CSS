@@ -10,6 +10,7 @@
         table{
             border-collapse: collapse;
             width: 500px;
+            position: relative;
         }
 
         th, td{
@@ -17,18 +18,38 @@
             padding: 10px;
         }
 
-        thead{
+        thead , tfoot{
             background-color: gray;
             color:white;
         }
 
+        thead > tr > th{
+            position:sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         .Posição{
-            width: 60px;
             text-align: center;
         }
 
         td.num{
             text-align: right;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightblue;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
         }
 
     </style>
@@ -39,10 +60,14 @@
 
     <table>
 
+        <caption>Populção do Acre</caption>
+
         <thead>
-            <th class="Posição">Posição</th>
-            <th>Localidade</th>
-            <th>População</th>
+            <tr>
+                <th scope="col" style="width: 50px">Posição</th>
+                <th scope="col">Localidade</th>
+                <th scope="col" style="width: 50px">População</th>
+            </tr>
         </thead>
 
         <tbody>
@@ -96,15 +121,74 @@
                 <td>Mâncio Lima</td>
                 <td class="num">19.643</td>
             </tr>
+            <tr>
+                <td class="Posição">11</td>
+                <td>Rodrigues Alves</td>
+                <td class="num">19.767</td>
+            </tr>
+            <tr>
+                <td class="Posição">12</td>
+                <td>Marechal Thaumaturgo</td>
+                <td class="num">19.727</td>
+            </tr>
+            <tr>
+                <td class="Posição">13</td>
+                <td>Porto Acre</td>
+                <td class="num">19.141</td>
+            </tr>
+            <tr>
+                <td class="Posição">14</td>
+                <td>Epitaciolândia</td>
+                <td class="num">18.979</td>
+            </tr>
+            <tr>
+                <td class="Posição">15</td>
+                <td>Acrelândia</td>
+                <td class="num">15.721</td>
+            </tr>
+            <tr>
+                <td class="Posição">16</td>
+                <td>Porto Walter</td>
+                <td class="num">12.497</td>
+            </tr>
+            <tr>
+                <td class="Posição">17</td>
+                <td>Capixaba</td>
+                <td class="num">19.643</td>
+            </tr>
+            <tr>
+                <td class="Posição">18</td>
+                <td>Bujari</td>
+                <td class="num">10.572</td>
+            </tr>
+            <tr>
+                <td class="Posição">19</td>
+                <td>Manoel Urbano</td>
+                <td class="num">9.701</td>
+            </tr>
+            <tr>
+                <td class="Posição">20</td>
+                <td>Jordão</td>
+                <td class="num">8.628</td>
+            </tr>
         </tbody>
 
         <tfoot>
-            <th class="Posição">Total</th>
+            <th scope="row" class="Posição">Total</th>
             <td>----</td>
-            <td class="num">745.921</td>
+            <td class="num">892.334</td>
         </tfoot>
     </table>
-
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque iure at, dicta unde aut, minima quisquam harum, repellat iste beatae magnam laboriosam obcaecati porro quam? Aperiam repellat dolores illo alias?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates, repudiandae, repellat accusamus officia optio tenetur est ullam alias magnam assumenda! Iste libero quasi, explicabo amet unde esse ratione iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae eligendi ea molestias perferendis officiis laborum reprehenderit nulla facilis, minus cumque, obcaecati enim sequi dolorem rerum alias vel amet. Unde, beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo modi impedit temporibus provident? Dignissimos facilis nisi excepturi quam unde vero, ex quibusdam similique cupiditate sapiente nostrum at voluptatem eum inventore.
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque iure at, dicta unde aut, minima quisquam harum, repellat iste beatae magnam laboriosam obcaecati porro quam? Aperiam repellat dolores illo alias?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates, repudiandae, repellat accusamus officia optio tenetur est ullam alias magnam assumenda! Iste libero quasi, explicabo amet unde esse ratione iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae eligendi ea molestias perferendis officiis laborum reprehenderit nulla facilis, minus cumque, obcaecati enim sequi dolorem rerum alias vel amet. Unde, beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo modi impedit temporibus provident? Dignissimos facilis nisi excepturi quam unde vero, ex quibusdam similique cupiditate sapiente nostrum at voluptatem eum inventore.
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque iure at, dicta unde aut, minima quisquam harum, repellat iste beatae magnam laboriosam obcaecati porro quam? Aperiam repellat dolores illo alias?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates, repudiandae, repellat accusamus officia optio tenetur est ullam alias magnam assumenda! Iste libero quasi, explicabo amet unde esse ratione iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae eligendi ea molestias perferendis officiis laborum reprehenderit nulla facilis, minus cumque, obcaecati enim sequi dolorem rerum alias vel amet. Unde, beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo modi impedit temporibus provident? Dignissimos facilis nisi excepturi quam unde vero, ex quibusdam similique cupiditate sapiente nostrum at voluptatem eum inventore.
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque iure at, dicta unde aut, minima quisquam harum, repellat iste beatae magnam laboriosam obcaecati porro quam? Aperiam repellat dolores illo alias?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates, repudiandae, repellat accusamus officia optio tenetur est ullam alias magnam assumenda! Iste libero quasi, explicabo amet unde esse ratione iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae eligendi ea molestias perferendis officiis laborum reprehenderit nulla facilis, minus cumque, obcaecati enim sequi dolorem rerum alias vel amet. Unde, beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo modi impedit temporibus provident? Dignissimos facilis nisi excepturi quam unde vero, ex quibusdam similique cupiditate sapiente nostrum at voluptatem eum inventore.
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque iure at, dicta unde aut, minima quisquam harum, repellat iste beatae magnam laboriosam obcaecati porro quam? Aperiam repellat dolores illo alias?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates, repudiandae, repellat accusamus officia optio tenetur est ullam alias magnam assumenda! Iste libero quasi, explicabo amet unde esse ratione iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae eligendi ea molestias perferendis officiis laborum reprehenderit nulla facilis, minus cumque, obcaecati enim sequi dolorem rerum alias vel amet. Unde, beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo modi impedit temporibus provident? Dignissimos facilis nisi excepturi quam unde vero, ex quibusdam similique cupiditate sapiente nostrum at voluptatem eum inventore.
+    </p>
     
 </body>
 </html>
