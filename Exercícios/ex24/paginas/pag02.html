@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead , tfoot{
+            background-color: gray;
+            color:white;
+        }
+
+        thead > tr > th{
+            position:sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        .Posição{
+            text-align: center;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightblue;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <table>
+
+        <caption>Populção do Acre</caption>
+
+        <thead>
+            <tr>
+                <th scope="col" style="width: 50px">Posição</th>
+                <th scope="col">Localidade</th>
+                <th scope="col" style="width: 50px">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="Posição">1</td>
+                <td>Rio Branco</td>
+                <td class="num">419.452</td>
+            </tr>
+            <tr>
+                <td class="Posição">2</td>
+                <td>Cruzeiro do Sul</td>
+                <td class="num">89.760</td>
+            </tr>
+            <tr>
+                <td class="Posição">3</td>
+                <td>Sena Madureira</td>
+                <td class="num">47.168</td>
+            </tr>
+            <tr>
+                <td class="Posição">4</td>
+                <td>Tarauacá</td>
+                <td class="num">43.730</td>
+            </tr>
+            <tr>
+                <td class="Posição">5</td>
+                <td>Feijó</td>
+                <td class="num">34.986</td>
+            </tr>
+            <tr>
+                <td class="Posição">6</td>
+                <td>Brasiléia</td>
+                <td class="num">27.123</td>
+            </tr>
+            <tr>
+                <td class="Posição">7</td>
+                <td>Senador Guiomard</td>
+                <td class="num">23.446</td>
+            </tr>
+            <tr>
+                <td class="Posição">8</td>
+                <td>Plácido de Castro</td>
+                <td class="num">20.147</td>
+            </tr>
+            <tr>
+                <td class="Posição">9</td>
+                <td>Xapuri</td>
+                <td class="num">19.866</td>
+            </tr>
+            <tr>
+                <td class="Posição">10</td>
+                <td>Mâncio Lima</td>
+                <td class="num">19.643</td>
+            </tr>
+            <tr>
+                <td class="Posição">11</td>
+                <td>Rodrigues Alves</td>
+                <td class="num">19.767</td>
+            </tr>
+            <tr>
+                <td class="Posição">12</td>
+                <td>Marechal Thaumaturgo</td>
+                <td class="num">19.727</td>
+            </tr>
+            <tr>
+                <td class="Posição">13</td>
+                <td>Porto Acre</td>
+                <td class="num">19.141</td>
+            </tr>
+            <tr>
+                <td class="Posição">14</td>
+                <td>Epitaciolândia</td>
+                <td class="num">18.979</td>
+            </tr>
+            <tr>
+                <td class="Posição">15</td>
+                <td>Acrelândia</td>
+                <td class="num">15.721</td>
+            </tr>
+            <tr>
+                <td class="Posição">16</td>
+                <td>Porto Walter</td>
+                <td class="num">12.497</td>
+            </tr>
+            <tr>
+                <td class="Posição">17</td>
+                <td>Capixaba</td>
+                <td class="num">19.643</td>
+            </tr>
+            <tr>
+                <td class="Posição">18</td>
+                <td>Bujari</td>
+                <td class="num">10.572</td>
+            </tr>
+            <tr>
+                <td class="Posição">19</td>
+                <td>Manoel Urbano</td>
+                <td class="num">9.701</td>
+            </tr>
+            <tr>
+                <td class="Posição">20</td>
+                <td>Jordão</td>
+                <td class="num">8.628</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th scope="row" class="Posição" colspan="2">Total</th>
+            <td class="num">892.334</td>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
