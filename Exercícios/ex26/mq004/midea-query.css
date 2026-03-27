@@ -1,3 +1,71 @@
 @charset "UTF-8";
 
-/*Ti*/
+/*Typical device breakpoints 2026:
+
+< 480px: Celulares pequenos / modo retrato.
+481px - 768px: iPads, tablets e celulares grandes.
+769px - 1024px: Tablets em modo paisagem, laptops pequenos.
+1025px - 1200px: Desktops e telas grandes.
+1201px e acima: Telas muito grandes, TVs. */ 
+
+@media print {
+        *{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body{
+            background-image: url(imagens/back-print.jpg);
+        }
+
+        main{
+            border: 2px solid rgb(242, 10, 10);
+        }
+
+        main h1{
+            text-shadow: none;
+        }
+
+        img#phone {display: none; }
+        img#tablet {display: none; }
+        img#print {display: block; }
+        img#pc {display: none; }
+        img#tv {display: none; }
+}
+
+@media screen and (min-width: 550px) and (max-width: 768px){
+        body {
+            background-image: url(imagens/back-tablet.jpg);
+            background-size: cover;
+            background-repeat: center center;
+        }
+
+        img#phone {display: none; }
+        img#tablet {display: block; }
+        img#print {display: none; }
+        img#pc {display: none; }
+        img#tv {display: none; }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px){
+        body {
+            background-image: url(imagens/back-pc.jpg);
+        }
+
+        img#phone {display: none; }
+        img#tablet {display: none; }
+        img#print {display: none; }
+        img#pc {display: block; }
+        img#tv {display: none; }
+}
+
+@media screen and (min-width:1025px){
+        body {
+            background-image: url(imagens/back-tv.jpg);
+        }
+
+        img#phone {display: none; }
+        img#tablet {display: none; }
+        img#print {display: none; }
+        img#pc {display: none; }
+        img#tv {display: block; }
+}
