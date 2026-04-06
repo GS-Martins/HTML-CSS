@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*Typical device breakpoints 2026:
+
+< 480px: Celulares pequenos / modo retrato.
+481px - 768px: iPads, tablets e celulares grandes.
+769px - 1024px: Tablets em modo paisagem, laptops pequenos.
+1025px - 1200px: Desktops e telas grandes.
+1201px e acima: Telas muito grandes, TVs. */ 
+
+@media screen and (min-width: 768px) {
+    i#burguer {
+        display: none;
+    }
+
+    menu { 
+        display: block;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
